@@ -1,0 +1,46 @@
+name: Torch Feedback
+description: Report a bug, request a feature, or share anything you notice while testing Torch.
+title: "[Feedback]: "
+labels:
+  - needs-triage
+body:
+  - type: dropdown
+    id: category
+    attributes:
+      label: Type of feedback
+      options:
+        - Bug
+        - Feature request
+        - UI or UX issue
+        - Performance issue
+        - General comment
+    validations:
+      required: true
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: What happened?
+      placeholder: "Short summary of the issue or idea."
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce (if a bug)
+      placeholder: |
+        1. Go to...
+        2. Click...
+        3. Expected...
+        4. Actual...
+    validations:
+      required: false
+
+  - type: textarea
+    id: extra
+    attributes:
+      label: Anything else?
+      placeholder: "Screenshots, details, suggestions..."
+    validations:
+      required: false
